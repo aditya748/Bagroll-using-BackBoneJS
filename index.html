@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Backbone</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/underscore.js"></script>
+	<script type="text/javascript" src="js/backbone.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+	<h1>BagRoll</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Author</th>
+				<th>Title</th>
+				<th>Url</th>
+				<th>Action</th>
+			</tr>
+			<tr>
+				<td><input type="text" class="form-control author-input" name=""></td>
+				<td><input type="text" class="form-control title-input" name=""></td>
+				<td><input type="text" class="form-control url-input" name=""></td>
+				<td><button class="btn btn-primary add-blog">Add</button></td>
+			</tr>
+		</thead>
+		<tbody class="blog-list">
+		</tbody>
+	</table>
+	<script type="text/template" class="blogs-list-template">
+		<td><span class="author"><%= author %></span></td>
+		<td><span class="title"><%= title %></span></td>
+		<td><span class="url"><%= url %></span></td>
+		<td><button class="btn btn-default blog-edit">Edit</button>&nbsp;<button class="btn btn-primary blog-submit" style="display:none">Submit</button><button  class="btn btn-danger cancel" >Delete</button><button class="btn btn-success blog-update" style="display:none">Update</button></td>
+	</script>
+</div>
+</body>
+</html>
